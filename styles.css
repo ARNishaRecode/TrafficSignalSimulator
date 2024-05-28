@@ -1,0 +1,305 @@
+#divScreen {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/images/trafficrules.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#signalRed {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: 45px;
+  right: -182px;
+}
+#signalRedNew {
+  position: relative;
+  background-color: rgb(237, 39, 9);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: 45px;
+  right: -182px;
+}
+#signalYellow {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: -100px;
+  right: -352px;
+}
+#signalYellowNew {
+  position: relative;
+  background-color: rgb(249, 238, 26);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: -100px;
+  right: -352px;
+}
+#signalGreen {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: -245px;
+  right: -521px;
+}
+#signalGreenNew {
+  position: relative;
+  background-color: rgb(42, 238, 12);
+  margin: 20px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 200px;
+  top: -245px;
+  right: -521px;
+}
+#readStop {
+  position: relative;
+  top: -174px;
+  right: -180px;
+  width: 130px;
+  height: 50px;
+  background: #f10e0e;
+}
+#readWait {
+  position: relative;
+  top: -225px;
+  right: -352px;
+  width: 130px;
+  height: 50px;
+  background: rgba(230, 197, 8, 0.993);
+}
+#readGo {
+  position: relative;
+  top: -275px;
+  right: -525px;
+  width: 130px;
+  height: 50px;
+  background: hsla(79, 62%, 55%, 0.779);
+}
+#buttonSimulator {
+  position: relative;
+  top: -520px;
+  right: 200px;
+}
+#counterRed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#counterYellow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#counterGreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#textStop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #070707f0;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#textWait {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #070707f0;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#textGo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #070707f0;
+  font-size: xxx-large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* Start Button */
+
+.button-85 {
+  position: absolute;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #151514;
+  border-radius: 50px;
+  font-size: large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #d76303,
+    #fffb00,
+    #4af308,
+    #055044,
+    #021366,
+    #7a00ff,
+    #87026a,
+    #ee0c0c
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #9bf304;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+/* stop button */
+
+.button-stop {
+  position: absolute;
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5ed17;
+  border-radius: 50px;
+  font-size: large;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.button-stop:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #d76303,
+    #fffb00,
+    #4af308,
+    #055044,
+    #021366,
+    #7a00ff,
+    #87026a,
+    #ee0c0c
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+@keyframes glowing-button-stop {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-stop:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fb0202;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
